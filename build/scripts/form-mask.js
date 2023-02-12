@@ -1,0 +1,1 @@
+telefoneContato.addEventListener("keypress",e=>mascaraTelefone(e.target.value)),telefoneContato.addEventListener("change",e=>mascaraTelefone(e.target.value));const mascaraTelefone=e=>{e=(e=(e=e.replace(/\D/g,"")).replace(/^(\d{2})(\d)/g,"($1) $2")).replace(/(\d)(\d{4})$/,"$1-$2"),telefoneContato.value=e};
